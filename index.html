@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Kokoa Clone</title>
   </head>
@@ -22,22 +21,27 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <div>
-      <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">
-          카카오계정있으면 이멜이나 폰번으로 로그인 하삼~
-        </p>
-      </header>
-      <form action="friends.html" method="get" id="login-form">
-        <input name="username" required type="text" placeholder="이멜 또는 폰번" />
-        <input name="password"required  type="password" placeholder="암호" />
-        <input type="submit" value="로긴" />
-        <a href="#">계정찾기</a>
-      </form>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
     </div>
+
     <script
-      src="https://kit.fontawesome.com/248346299b.js"
+      src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
   </body>
